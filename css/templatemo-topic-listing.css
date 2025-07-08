@@ -929,6 +929,40 @@ blockquote {
 }
 
 /*---------------------------------------
+  SOCIAL CONTACT BUTTONS              
+-----------------------------------------*/
+.btn-social {
+  border-radius: var(--border-radius-large);
+  padding: 8px 16px;
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.btn-social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-medium);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info h6 {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+/*---------------------------------------
   FAQs              
 -----------------------------------------*/
 .faq-section .accordion-item {

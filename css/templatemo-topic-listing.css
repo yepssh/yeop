@@ -827,6 +827,108 @@ blockquote {
 
 
 /*---------------------------------------
+  TEAM MEMBERS              
+-----------------------------------------*/
+.team-member-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-medium);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.team-member-image-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 4px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.team-member-card:hover .team-member-image-wrapper {
+  border-color: var(--white-color);
+  transform: scale(1.05);
+}
+
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.team-member-card:hover .team-member-image {
+  transform: scale(1.1);
+}
+
+.team-member-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-member-info h4 {
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+.team-member-info h6 {
+  color: var(--secondary-color);
+  font-size: var(--menu-font-size);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.team-member-info p {
+  font-size: var(--copyright-font-size);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Team detail page specific styles */
+.team-detail-image-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--secondary-color);
+  margin: 0 auto;
+}
+
+.team-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skill-item {
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-small);
+  padding: 8px 16px;
+  margin: 4px;
+  display: inline-block;
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+}
+
+/*---------------------------------------
   FAQs              
 -----------------------------------------*/
 .faq-section .accordion-item {

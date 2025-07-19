@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Topic Detail Page</title>
+        <title>Case Studies</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,37 +45,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-5 me-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                                <a class="nav-link" href="index.html#section_1">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_2">Service</a>
+                                <a class="nav-link" href="services.html">Services</a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_3">Teams</a>
+                                <a class="nav-link" href="team.html">Team</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_4">Contact Us</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Topic Listing</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="topics-listing.html">All Topics</a></li>
-
-                                    <li><a class="dropdown-item" href="topic-detail.html?topic=finance">Finance</a></li>
-                                    
-                                    <li><a class="dropdown-item" href="topic-detail.html?topic=design">Design</a></li>
-                                    
-                                    <li><a class="dropdown-item" href="topic-detail.html?topic=marketing">Marketing</a></li>
-                                </ul>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
 
@@ -95,15 +77,14 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
-
-                                    <li class="breadcrumb-item active" aria-current="page" id="topic-breadcrumb">Topic</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
                                 </ol>
                             </nav>
 
-                            <h2 class="text-white" id="topic-title">Topic Details</h2>
+                            <h2 class="text-white" id="case-title">Our Success Stories</h2>
 
                             <div class="d-flex align-items-center mt-5">
-                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Read More</a>
+                                <a href="#case-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">View Details</a>
 
                                 <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
                             </div>
@@ -111,7 +92,7 @@
 
                         <div class="col-lg-5 col-12">
                             <div class="topics-detail-block bg-white shadow-lg">
-                                <img id="topic-header-image" src="" class="topics-detail-block-image img-fluid" alt="">
+                                <img id="case-header-image" src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" class="topics-detail-block-image img-fluid" alt="Case Study">
                             </div>
                         </div>
 
@@ -120,23 +101,15 @@
             </header>
 
 
-            <section class="topics-detail-section section-padding" id="topics-detail">
+            <section class="section-padding" id="case-detail">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-8 col-12 m-auto">
-                            <h3 id="topic-detail-title" class="mb-4">Topic Details</h3>
-
-                            <div id="topic-content">
-                                <!-- Topic content will be loaded here -->
-                            </div>
-
-                            <div class="row my-4" id="topic-images">
-                                <!-- Additional images will be loaded here -->
-                            </div>
-
-                            <div id="topic-additional-content">
-                                <!-- Additional content will be loaded here -->
+                            <div id="case-content">
+                                <!-- Case study content will be loaded here -->
+                                <h3 class="mb-4">Case Study Details</h3>
+                                <p>Select a case study from our portfolio to see detailed information about our work and results.</p>
                             </div>
                         </div>
 
@@ -144,32 +117,8 @@
                 </div>
             </section>
 
-
-            <section class="section-padding section-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-5 col-12">
-                            <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" class="newsletter-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
-                            <form class="custom-form subscribe-form" action="#" method="post" role="form">
-                                <h4 class="mb-4 pb-2">Get Newsletter</h4>
-
-                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Address" required="">
-
-                                <div class="col-lg-12 col-12">
-                                    <button type="submit" class="form-control">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
         </main>
-		
+
         <footer class="site-footer section-padding">
             <div class="container">
                 <div class="row">
@@ -186,19 +135,19 @@
 
                         <ul class="site-footer-links">
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Home</a>
+                                <a href="index.html#section_1" class="site-footer-link">Home</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">How it works</a>
+                                <a href="services.html" class="site-footer-link">Services</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">FAQs</a>
+                                <a href="team.html" class="site-footer-link">Team</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Contact</a>
+                                <a href="contact.html" class="site-footer-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -253,7 +202,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/topic-detail.js"></script>
+        <script src="js/case-studies.js"></script>
         <script src="js/live-chat.js"></script>
 
     </body>
